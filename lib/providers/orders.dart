@@ -27,7 +27,7 @@ class Orders with ChangeNotifier {
   }
 
   Future<void> fetchAndSetOrders() async {
-    const url = 'https://flutter-update.firebaseio.com/orders.json';
+    const url = 'https://salamat-5c78c.firebaseio.com/orders.json';
     final response = await http.get(url);
     final List<OrderItem> loadedOrders = [];
     final extractedData = json.decode(response.body) as Map<String, dynamic>;
